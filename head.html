@@ -1,0 +1,39 @@
+<script type="text/javascript">
+/* 鼠标特效 */
+
+function randColor() { return 255 * Math.random(); }
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        // var a = new Array("❤富强❤","❤民主❤","❤文明❤","❤和谐❤","❤自由❤","❤平等❤","❤公正❤","❤法治❤","❤爱国❤","❤敬业❤","❤诚信❤","❤友善❤");
+        var $i = $("<span></span>").text("❤");
+        var x = e.pageX, y = e.pageY;
+        $i.css({
+            "z-index": 10000000000000,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            // "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+			"color": "rgb(" + ~~randColor() + "," + ~~randColor() + "," + ~~randColor() + ")"
+        });
+        $("body").append($i);
+        $i.animate(
+			{ "top": y - 180, "opacity": 0 }, // animate arguments
+        	1500, // delay
+        	function() { $i.remove(); } // after hook
+		);
+    });
+});
+
+// change favicon
+var faviconURL = "https://fuweiji.pythonanywhere.com/static/favicon.ico";
+var iconLink = document.createElement("link");
+iconLink.rel = "shortcut icon";
+iconLink.href = faviconURL;
+document.getElementsByTagName("head")[0].appendChild(iconLink);
+
+var backImageURL = "https://images.cnblogs.com/cnblogs_com/blogs/780469/galleries/2273116/o_230210160743_-11f8ae4c36d1285c.png";
+</script>
+<div class="jfy-background-image">
+	<img src="https://images.cnblogs.com/cnblogs_com/blogs/780469/galleries/2273116/o_230210160743_-11f8ae4c36d1285c.png" />
+</div>

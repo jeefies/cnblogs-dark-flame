@@ -1,0 +1,149 @@
+@font-face {
+    src: url("https://fuweiji.pythonanywhere.com/static/fonts/UbuntuMono-B.ttf");
+    font-family: "UbuntuMono";
+	font-weight: bold;
+}
+
+@font-face {
+	src: url("https://fuweiji.pythonanywhere.com/static/fonts/UbuntuMono-R.ttf");
+	font-family: "UbuntuMono";
+}
+
+@font-face {
+	src: url("https://fuweiji.pythonanywhere.com/static/fonts/UbuntuMono-RI.ttf");
+	font-family: "UbuntuMono";
+	font-style: italic;
+}
+@font-face {
+	src: url("https://fuweiji.pythonanywhere.com/static/fonts/UbuntuMono-BI.ttf");
+	font-family: "UbuntuMono";
+	font-weight: bold;
+	font-style: italic;
+}
+
+body {
+	font-family: "UbuntuMono";
+	font-size: 1.07em;
+}
+
+blockquote {
+	/* color #1fa6e6 is copy from template ! */
+	border-left: 3px solid #1fa6e6 !important;
+	background: rgba(255, 255, 255, 40%) !important;
+}
+
+#top_nav {
+    display: none !important;
+}
+
+#noir {
+    display: none !important;
+}
+
+#profile_block {
+    display: none;
+}
+
+#main {
+    background: rgba(255, 255, 255, 75%) !important;
+}
+
+#mainContent {
+    background: rgba(255, 255, 255, 40%) !important;
+}
+
+@media only screen and (max-width: 800px) {
+	.toc {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+	.toc {
+		left: unset !important;
+		right: 2vw !important;
+	}
+}
+
+.toc {
+	position: fixed;
+	left: 2vw;
+	bottom: 10vh;
+	z-index: 1000000;
+	background: rgba(255, 255, 255, 75%);
+	border-radius: 1em;
+	padding: .5em;
+}
+
+code, pre[class*="language-"] {
+    font-family: "UbuntuMono" !important;
+    font-size: 1em !important;
+}
+
+a:hover {
+	transition-duration: .5s;
+}
+
+.postTitle {
+	font-size: 1.07em;
+}
+
+.postTitle2 {
+	font-size: 1.03em;
+}
+
+.menu {
+	font-size: 1.1em !important;
+}
+
+.CalTitle a {
+	padding: 0 .5em !important;
+	text-decoration: none;
+}
+
+.CalTitle a:hover {
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+div .jfy-background-image {
+	width: 100%;
+}
+
+div .jfy-background-image img {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	z-index: -100;
+	opacity: 1;
+}
+
+div .jfy-sidebar {
+    background-color: #655;
+    border-radius: 0.5vw;
+    box-shadow: 0 0 0 .6em #655;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px dashed white;
+    margin: 2%;
+    font-size: 1.2rem;
+    font-family: "UbuntuMono";
+}
+
+.jfy-white-lia li a {
+    color: white;
+}
+
+.jfy-ul-pretab li {
+    padding-left: 1em;
+}
+
+.jfy-white {
+    color: white;
+}
+
+.jfy-strong {
+    font-size: 1.1em;
+    font-weight: bold;
+}
