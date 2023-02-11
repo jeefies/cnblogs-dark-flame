@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1346053_111ghkv8md9.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+<script src="https://blog-static.cnblogs.com/files/blogs/780436/main.js?t=1673176738"></script>
+<script type="text/javascript">
+    $.silence({
+        profile: {
+            enable: true,
+            avatar: 'https://pic.cnblogs.com/avatar/3077771/20230114110511.png',
+            favicon: 'https://pic.cnblogs.com/avatar/3077771/20230114110511.png',
+            notice: '国家尚未富强，曾谈儿女情长'
+        },
+        catalog: {
+            enable: true,
+            move: true,
+            index: true,
+            level1: 'h2',
+            level2: 'h3',
+            level3: 'h4',
+        },
+        signature: {
+            enable: true,
+            home: 'https://www.cnblogs.com/hfjh/',
+            license: 'CC BY 4.0',
+            link: 'https://creativecommons.org/licenses/by/4.0'
+        },
+        sponsor: {
+            enable: true,
+            paypal: null,
+            wechat: 'https://cdn.luogu.com.cn/upload/image_hosting/ezfdse22.png',
+            alipay: 'https://cdn.luogu.com.cn/upload/image_hosting/g8vq5le6.png'
+        },
+        github: {
+            enable: false,
+            color: '#fff',
+            fill: '#FF85B8',
+            link: 'https://github.com/jeefies'
+        },
+	topImg: {
+		homeTopImg: [
+"https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808214726187-2092834311.jpg",
+"https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808213853909-1772245301.jpg",
+"https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808213858652-132088076.jpg"
+                ],
+              notHomeTopImg: [
+"https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808214726187-2092834311.jpg",
+"https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808213853909-1772245301.jpg",
+"https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808213858652-132088076.jpg"
+
+					]
+		},
+                      topInfo: {
+					title: 'Hi!',
+                    text: '发生的已经发生，但不是我们无所作为的理由',
+					github: "https://github.com/jeefies",
+					weibo: "https://weibo.com/6205206515/profile?topnav=1&wvr=6",
+					telegram: "",
+					music: "https://music.163.com/#/user/home?id=1645044138",
+					twitter: "",
+					zhihu:"https://www.zhihu.com/people/hfjh-67-94",
+					mail: "3239087401@qq.com",
+				}
+    });
+</script>
+
+<!--倒计时-->
+<div id="showsectime"></div>
+
+<script type="text/javascript">
+function NewDate(str) { 
+str = str.split('-'); 
+var date = new Date(); 
+date.setUTCFullYear(str[0], str[1] - 1, str[2]); 
+date.setUTCHours(0, 0, 0, 0); 
+return date; 
+} 
+function showsectime() {
+var birthDay =NewDate("2007-08-23");
+var today=new Date();
+var timeold=today.getTime()-birthDay.getTime();
+var sectimeold=timeold/1000
+var secondsold=Math.floor(sectimeold);
+var msPerDay=24*60*60*1000; var e_daysold=timeold/msPerDay;
+var daysold=Math.floor(e_daysold);
+var e_hrsold=(daysold-e_daysold)*-24;
+var hrsold=Math.floor(e_hrsold);
+var e_minsold=(hrsold-e_hrsold)*-60;
+var minsold=Math.floor((hrsold-e_hrsold)*-60); var seconds=Math.floor((minsold-e_minsold)*-60).toString();
+document.getElementById("showsectime").innerHTML = daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+setTimeout(showsectime, 1000);
+}showsectime();
+</script>
+<!--倒计时end-->
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1414783972&auto=1&height=66"></iframe>

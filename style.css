@@ -30,18 +30,12 @@ blockquote {
 	/* color #1fa6e6 is copy from template ! */
 	border-left: 3px solid #1fa6e6 !important;
 	background: rgba(255, 255, 255, 40%) !important;
+	font-size: .95em;
 }
 
-#top_nav {
+#noir, #cnblogs_c1, #under_post_card1, #under_post_card2, .buryit, #top_nav,
+#profile_block, #tip_comment2 {
     display: none !important;
-}
-
-#noir {
-    display: none !important;
-}
-
-#profile_block {
-    display: none;
 }
 
 #main {
@@ -50,6 +44,15 @@ blockquote {
 
 #mainContent {
     background: rgba(255, 255, 255, 40%) !important;
+}
+
+.comment_textarea {
+	background: rgba(255, 255, 255, 60%);
+}
+
+textarea#tbCommentBody {
+	background: transparent;
+	height: 8em;
 }
 
 @media only screen and (max-width: 800px) {
@@ -65,10 +68,25 @@ blockquote {
 	}
 }
 
+.author_avatar {
+	width: 4em;
+	height: 4em;
+}
+
+#author_profile {
+	font-size: 1em;
+}
+
+#author_profile_detail a {
+	/* font-size: 1em; */
+	line-height: 1.5em;
+}
+
 .toc {
 	position: fixed;
 	left: 2vw;
-	bottom: 10vh;
+	top: 50vh;
+	transform: translate(0, -50%);
 	z-index: 1000000;
 	background: rgba(255, 255, 255, 75%);
 	border-radius: 1em;
@@ -78,6 +96,10 @@ blockquote {
 code, pre[class*="language-"] {
     font-family: "UbuntuMono" !important;
     font-size: 1em !important;
+}
+
+#EntryTag {
+	font-size: inherit;
 }
 
 a:hover {
@@ -92,6 +114,26 @@ a:hover {
 	font-size: 1.03em;
 }
 
+#cnblogs_post_body h1 {
+	font-size: 1.8em;
+}
+
+#cnblogs_post_body h2 {
+	font-size: 1.6em;
+}
+
+#cnblogs_post_body h3 {
+	font-size: 1.45em;
+}
+
+#cnblogs_post_body h4 {
+	font-size: 1.3em;
+}
+
+#cnblogs_post_body h5 {
+	font-size: 1.15em;
+}
+
 .menu {
 	font-size: 1.1em !important;
 }
@@ -104,6 +146,21 @@ a:hover {
 .CalTitle a:hover {
 	font-size: 1.2em;
 	text-decoration: none;
+}
+
+.CalWeekendDay {
+	background: #655;
+	opacity: .7;
+	color: lightgray;
+}
+
+.CalTodayDay {
+	background: #655;
+	color: white;
+}
+
+.Cal td {
+	border-radius: 1em;
 }
 
 div .jfy-background-image {
@@ -121,13 +178,13 @@ div .jfy-background-image img {
 
 div .jfy-sidebar {
     background-color: #655;
-    border-radius: 0.5vw;
+    border-radius: 0.5em;
     box-shadow: 0 0 0 .6em #655;
     padding: 1em;
     box-sizing: border-box;
     border: 1px dashed white;
     margin: 2%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: "UbuntuMono";
 }
 
@@ -146,4 +203,22 @@ div .jfy-sidebar {
 .jfy-strong {
     font-size: 1.1em;
     font-weight: bold;
+}
+
+.comment_btn {
+	background: #009688;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	height: 38px;
+	line-height: 37px;
+	padding: 0 1em;
+	font-size: 1em;
+	width: 5em;
+}
+
+#post_next_prev {
+	font-size: 1em;
 }
