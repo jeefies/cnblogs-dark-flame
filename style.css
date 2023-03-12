@@ -23,7 +23,7 @@
 
 body {
 	font-family: "UbuntuMono";
-	font-size: 1.07em;
+	font-size: 14px;
 }
 
 blockquote {
@@ -34,8 +34,19 @@ blockquote {
 }
 
 #noir, #cnblogs_c1, #under_post_card1, #under_post_card2, .buryit, #top_nav,
-#profile_block, #tip_comment2 {
+#profile_block, #tip_comment2, #cnblogs_ch {
     display: none !important;
+}
+
+/* leave some space for TOC!*/
+#home {
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1650px) {
+	#home {
+		margin: 0 0 0 250px;
+	}
 }
 
 #main {
@@ -74,28 +85,29 @@ textarea#tbCommentBody {
 }
 
 #author_profile {
-	font-size: 1em;
+	font-size: 1.1em;
 }
 
 #author_profile_detail a {
 	/* font-size: 1em; */
-	line-height: 1.5em;
+	line-height: 2em;
 }
 
 .toc {
 	position: fixed;
-	left: 2vw;
+	left: .5vw;
 	top: 50vh;
 	transform: translate(0, -50%);
 	z-index: 1000000;
 	background: rgba(255, 255, 255, 75%);
 	border-radius: 1em;
 	padding: .5em;
+	line-height: 1.4;
 }
 
 code, pre[class*="language-"] {
     font-family: "UbuntuMono" !important;
-    font-size: 1em !important;
+    font-size: 1.05em !important;
 }
 
 #EntryTag {
@@ -184,7 +196,7 @@ div .jfy-sidebar {
     box-sizing: border-box;
     border: 1px dashed white;
     margin: 2%;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-family: "UbuntuMono";
 }
 

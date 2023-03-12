@@ -28,11 +28,18 @@ jQuery(document).ready(function($) {
 // change favicon
 var faviconURL = "https://fuweiji.pythonanywhere.com/static/favicon.ico";
 var iconLink = document.createElement("link");
+var headBlock = document.getElementsByTagName("head")[0];
 iconLink.rel = "shortcut icon";
 iconLink.href = faviconURL;
-document.getElementsByTagName("head")[0].appendChild(iconLink);
+headBlock.appendChild(iconLink);
 
 var backImageURL = "https://images.cnblogs.com/cnblogs_com/blogs/780469/galleries/2273116/o_230210160743_-11f8ae4c36d1285c.png";
+
+// add meta <meta name="referrer" content="no-referrer" />
+var refMeta = document.createElement("meta");
+refMeta.name = "referrer";
+refMeta.content = "no-referrer";
+headBlock.appendChild(refMeta);
 </script>
 <div class="jfy-background-image">
 	<img src="https://images.cnblogs.com/cnblogs_com/blogs/780469/galleries/2273116/o_230210160743_-11f8ae4c36d1285c.png" />
