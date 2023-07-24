@@ -1,3 +1,7 @@
+<div class="jfy-background-image">
+	<img src="https://images.cnblogs.com/cnblogs_com/blogs/780469/galleries/2273116/o_230210160743_-11f8ae4c36d1285c.png" id="jfy-bkimg" />
+</div>
+
 <script type="text/javascript">
 /* 鼠标特效 */
 
@@ -33,14 +37,26 @@ iconLink.rel = "shortcut icon";
 iconLink.href = faviconURL;
 headBlock.appendChild(iconLink);
 
-var backImageURL = "https://images.cnblogs.com/cnblogs_com/blogs/780469/galleries/2273116/o_230210160743_-11f8ae4c36d1285c.png";
-
 // add meta <meta name="referrer" content="no-referrer" />
 var refMeta = document.createElement("meta");
 refMeta.name = "referrer";
 refMeta.content = "no-referrer";
 headBlock.appendChild(refMeta);
+
+var backImageURL = "https://images.cnblogs.com/cnblogs_com/blogs/780469/galleries/2273116/o_230210160743_-11f8ae4c36d1285c.png";
+var backImageURL2 = "https://images.cnblogs.com/cnblogs_com/blogs/780469/galleries/2273116/o_230608141007_az8kexrj.jpeg"
+
+var bgiImg = document.getElementById("jfy-bkimg");
+
+const updateBackgroundImage = () => {
+    ratio = window.innerWidth / window.innerHeight;
+    if (ratio > 1) bgiImg.src = backImageURL;
+    else bgiImg.src = backImageURL2;
+    console.log("Resize!!!", {
+        width: window.innerWidth,
+        height: window.innerHeight,
+    })
+}
+
+window.addEventListener('resize', updateBackgroundImage);
 </script>
-<div class="jfy-background-image">
-	<img src="https://images.cnblogs.com/cnblogs_com/blogs/780469/galleries/2273116/o_230210160743_-11f8ae4c36d1285c.png" />
-</div>
